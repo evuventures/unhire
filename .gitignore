@@ -1,0 +1,6 @@
+# Files and folders that are not pushed to github.
+
+venv/
+nodemodules/
+*__pycache__/
+.env
