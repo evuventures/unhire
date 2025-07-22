@@ -84,31 +84,6 @@ Monitoring: Sentry, PostHog (optional)
 
 ---
 
-## 📁 Folder Structure
-
-unhire/
-├── backend/ (Django API)
-│ ├── manage.py
-│ └── unhire_core/
-│ ├── users/
-│ ├── tasks/
-│ ├── warnings/
-│ ├── reviews/
-│ ├── notifications/
-│ └── settings.py
-├── frontend/ (React)
-│ ├── public/
-│ └── src/
-│ ├── components/
-│ ├── pages/
-│ ├── api/
-│ └── App.jsx
-├── .env
-├── .gitignore
-└── README.md
-
----
-
 ## 🧪 Manual Setup
 
 ### Backend (Django)
