@@ -13,8 +13,6 @@
 
 In today’s freelance market, clients often struggle to find qualified professionals who can execute tasks precisely and on time. Many end up hiring unverified freelancers who either miss deadlines or fail to meet expectations, leading to frustration, delays, and wasted resources.
 
----
-
 ## 🎯 Our Solution
 
 Unhire matches clients with pre-vetted, qualified freelancers and ensures accountability through:
@@ -45,7 +43,6 @@ Backend: Django, Django REST Framework
 Database: MySQL or PostgreSQL
 Authentication: JWT
 DevOps: Docker (for local setup)
-Monitoring: Sentry, PostHog (optional)
 
 ---
 
@@ -151,21 +148,25 @@ Style guides:
 Email: [abdu@evu.com](mailto:abdul@evu.com)
 GitHub: [https://github.com/Abdul17rahman/unhire](https://github.com/Abdul17rahman/unhire)
 
-\[Danyellez Ramires]
+**Co-Lead**: \[Danyellez Ramires]
 Email: [danyellez@evu.com](mailto:danyellez@evu.com)
 GitHub: [https://github.com/Danellyz/unhire](https://github.com/Danellyz/unhire)
+
+\[Rajnil Prasad]
+Email: [rajnil@evu.com](mailto:rajnil@evu.com)
+GitHub: [https://github.com/rajnilprasad/unhire](https://github.com/rajnilprasad/unhire)
 
 Website: [https://unhire.com](https://unhire.com) _(coming soon)_
 
 For urgent collaboration or access:
 
-- Message us on LinkedIn
+- Message us on [LinkedIn](https://www.linkedin.com/company/90839042/admin/dashboard/)
 
 ---
 
 ## 📄 License
 
-This project is open-sourced under the MIT License.
+This project is a product of EVU Ventures under the MIT License.
 
 ---
 
