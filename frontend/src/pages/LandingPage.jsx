@@ -11,6 +11,8 @@ const LandingPage = () => {
                 </p>
                 <button className="join-button">Join Waitlist</button>
             </header>
+
+
             <section className="how-it-works">
                 <h2>How It Works</h2>
                 <div className="steps">
