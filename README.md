@@ -3,7 +3,8 @@
 **Unhire** is a freelance platform built to eliminate unreliable deliveries, missed deadlines, and communication issues between clients and freelancers. Our system emphasizes accountability, structured execution timelines, and performance-based participation. If you've been burned by freelance platforms before, Unhire is the solution.
 
 **Landing Page**
-<img width="1041" height="726" alt="Screenshot 2025-07-22 at 18 10 23" src="https://github.com/user-attachments/assets/80e5e424-37d7-458f-a5b4-77a92ae8763c" />
+<img width="1040" height="724" alt="landing" src="https://github.com/user-attachments/assets/2fbaa9a5-4056-4482-8302-03c17fd7ff22" />
+
 
 <img width="1041" height="607" alt="Screenshot 2025-07-22 at 18 10 55" src="https://github.com/user-attachments/assets/965c529b-8fa6-4567-a90b-8409c7645828" />
 
