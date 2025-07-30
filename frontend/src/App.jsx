@@ -1,18 +1,20 @@
 import { useState } from 'react'
 import LandingPage from './pages/landingPage'
 import './App.css'
+import Card from './pages/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <LandingPage />
-      </div>
 
-    </>
+    <div>
+      <LandingPage />
+
+    </div>
+
+
   )
 }
 
-export default App
+export default App;
