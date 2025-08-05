@@ -19,6 +19,7 @@ const LandingPage = () => {
                 <section className="how-it-works">
                     <h2>How It Works</h2>
                     <div className="cards-container">
+
                         <Card />
                     </div>
                 </section>
