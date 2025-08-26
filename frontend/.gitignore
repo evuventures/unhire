@@ -1,3 +1,38 @@
+
+# Node modules
+/node_modules
+
+# Build artifacts
+/dist
+/build
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Temporary files
+*~
+*.tmp
+*.temp
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Compiled source files
+*.class
+*.o
+
+
+
 # Logs
 logs
 *.log
@@ -22,3 +57,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
