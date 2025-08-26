@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import './Card.css';
-import projectIcon from "../components/icons/project-icon.png";
 import check from "../components/icons/check.png";
 import time from "../components/icons/time.png";
 import approval from "../components/icons/approval.png";
@@ -8,9 +7,10 @@ import approval from "../components/icons/approval.png";
 function Card({ title, imageURL, description }) {
     return (
         <div className="card">
+            {/* Card Section: Post a Project */}
             <div className="card-container">
                 <div className="image-container">
-                    <img src={projectIcon} alt={title} />
+                    <img src={projectIcon} alt="Post a Project" />
                 </div>
                 <div className="card-content">
                     <div className="card-title">
@@ -22,9 +22,10 @@ function Card({ title, imageURL, description }) {
                 </div>
             </div>
 
+            {/* Card Section: Claim & Deliver */}
             <div className="card-container">
                 <div className="image-container">
-                    <img src={check} alt={title} />
+                    <img src={check} alt="Claim & Deliver" />
                 </div>
                 <div className="card-content">
                     <div className="card-title">
@@ -36,9 +37,10 @@ function Card({ title, imageURL, description }) {
                 </div>
             </div>
 
+            {/* Card Section: Timed Execution */}
             <div className="card-container">
                 <div className="image-container">
-                    <img src={time} alt={title} />
+                    <img src={time} alt="Timed Execution" />
                 </div>
                 <div className="card-content">
                     <div className="card-title">
@@ -50,9 +52,10 @@ function Card({ title, imageURL, description }) {
                 </div>
             </div>
 
+            {/* Card Section: Client Approval */}
             <div className="card-container">
                 <div className="image-container">
-                    <img src={approval} alt={title} />
+                    <img src={approval} alt="Client Approval" />
                 </div>
                 <div className="card-content">
                     <div className="card-title">
@@ -64,10 +67,6 @@ function Card({ title, imageURL, description }) {
                 </div>
             </div>
         </div>
-
-
-
-
     );
 }
 
