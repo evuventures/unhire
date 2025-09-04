@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verification</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-700 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <div class="flex items-center space-x-10">
+      <!-- Logo Placeholder -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <!-- Nav Links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">Find work</a>
+        <a href="#" class="hover:text-purple-500">Delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">Requests</a>
+      </nav>
+    </div>
+    <!-- Search -->
+    <div class="relative">
+      <input type="text" placeholder="search jobs" 
+        class="px-4 py-2 rounded-full border border-gray-300 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <span class="absolute right-3 top-2.5 text-gray-400">🔍</span>
+    </div>
+  </header>
+
+  <!-- Verification Content -->
+  <main class="max-w-2xl mx-auto py-12">
+
+    <!-- Verification Methods Table -->
+    <div class="overflow-hidden border border-purple-200 rounded-xl shadow-sm">
+      <table class="w-full text-sm">
+        <thead class="bg-purple-100 text-purple-700">
+          <tr>
+            <th class="text-left px-6 py-3 font-medium">Verification</th>
+            <th class="text-left px-6 py-3 font-medium">Methods</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-purple-200">
+          <tr>
+            <td class="px-6 py-4">🪪</td>
+            <td class="px-6 py-4">ID Card</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">🛂</td>
+            <td class="px-6 py-4">Passport</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">💳</td>
+            <td class="px-6 py-4">Driver License</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="text-center mt-12">
+      <h2 class="font-semibold text-lg mb-6">Snap front and back of verification method</h2>
+      <div class="w-full h-64 bg-gray-100 border border-purple-300 rounded-lg flex items-center justify-center cursor-pointer">
+        <span class="text-3xl">📷</span>
+      </div>
+    </div>
+
+    <!-- Verify Button -->
+    <div class="text-center mt-10">
+      <button class="border border-purple-400 px-8 py-2 rounded-full text-sm hover:bg-purple-50 transition">
+        Verify
+      </button>
+    </div>
+  </main>
+
+</body>
+</html>

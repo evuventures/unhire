@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Setup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-700 font-sans">
+
+  <!-- Top Nav -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <div class="flex items-center space-x-10">
+      <!-- Logo Placeholder -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <!-- Nav Links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">Find work</a>
+        <a href="#" class="hover:text-purple-500">Delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">Requests</a>
+      </nav>
+    </div>
+    <!-- Search -->
+    <div class="relative">
+      <input type="text" placeholder="search jobs" 
+        class="px-4 py-2 rounded-full border border-gray-300 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <span class="absolute right-3 top-2.5 text-gray-400">🔍</span>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-2xl mx-auto py-10 space-y-12">
+
+    <!-- Skills -->
+    <div>
+      <label class="block text-center font-medium mb-3">Skills</label>
+      <select class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400">
+        <option>Web Design</option>
+        <option>App Development</option>
+        <option>Digital Marketing</option>
+        <option>Social Media Management</option>
+        <option>UI/UX</option>
+        <option>Desktop Apps</option>
+        <option>DevOps, Cloud & Infrastructure</option>
+        <option>Game Development</option>
+        <option>Copywriting & Content Writing</option>
+        <option>Content Creation & Video Editing</option>
+        <option>Virtual Assistance & Business Support</option>
+        <option>Others</option>
+      </select>
+    </div>
+
+    <!-- Tools -->
+    <div>
+      <label class="block text-center font-medium mb-3">What Tools Do You Use?</label>
+      <input type="text" placeholder="Enter tools" 
+        class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"/>
+    </div>
+
+    <!-- Summary -->
+    <div>
+      <label class="block text-center font-medium mb-3">Summarize Yourself</label>
+      <textarea rows="4" placeholder="Please summarize your job role and experience." 
+        class="w-full border border-purple-300 rounded-md p-3 text-sm focus:ring-2 focus:ring-purple-400"></textarea>
+    </div>
+
+    <!-- Projects -->
+    <div>
+      <h2 class="text-center font-medium mb-6">Add Your Top 3 Projects</h2>
+
+      <!-- Project template -->
+      <div class="space-y-4 mb-10">
+        <input type="url" placeholder="Add link" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"/>
+        <textarea rows="3" placeholder="Describe the project in 30 words" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"></textarea>
+        <div class="w-full h-32 border border-purple-300 rounded-md flex items-center justify-center text-purple-400 text-sm cursor-pointer">
+          <span>+ project cover</span>
+        </div>
+      </div>
+
+      <div class="space-y-4 mb-10">
+        <input type="url" placeholder="Add link" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"/>
+        <textarea rows="3" placeholder="Describe the project in 30 words" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"></textarea>
+        <div class="w-full h-32 border border-purple-300 rounded-md flex items-center justify-center text-purple-400 text-sm cursor-pointer">
+          <span>+ project cover</span>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <input type="url" placeholder="Add link" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"/>
+        <textarea rows="3" placeholder="Describe the project in 30 words" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"></textarea>
+        <div class="w-full h-32 border border-purple-300 rounded-md flex items-center justify-center text-purple-400 text-sm cursor-pointer">
+          <span>+ project cover</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gender and Location -->
+    <div class="flex items-start space-x-6">
+      <div>
+        <label class="block text-sm font-medium mb-2">Gender</label>
+        <div class="space-y-2 text-sm">
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="gender" value="male" class="text-purple-500"/>
+            <span>Male</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="gender" value="female" class="text-purple-500"/>
+            <span>Female</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="gender" value="other" class="text-purple-500"/>
+            <span>Other</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <label class="block text-sm font-medium mb-2">Location</label>
+        <input type="text" placeholder="Enter location" 
+          class="w-full border border-purple-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-400"/>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-2">Profile Picture</label>
+        <div class="w-28 h-16 border border-purple-300 rounded-md flex items-center justify-center text-purple-400 cursor-pointer">
+          +
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Button -->
+    <div class="text-center">
+      <button class="border border-purple-400 text-gray-700 px-8 py-2 rounded-full hover:bg-purple-50 transition">
+        Next
+      </button>
+    </div>
+  </main>
+</body>
+</html>
+

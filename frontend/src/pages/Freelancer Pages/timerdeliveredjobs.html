@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delivered Jobs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <!-- Left: Logo + Search + Nav -->
+    <div class="flex items-center gap-8">
+      <!-- Logo -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+
+      <!-- Search -->
+      <div class="flex items-center border border-purple-300 rounded-full px-4 w-64">
+        <input 
+          type="text" 
+          placeholder="search jobs" 
+          class="flex-1 text-sm py-2 focus:outline-none"/>
+        <span class="text-gray-400">🔍</span>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="text-purple-600 font-medium">delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">find work</a>
+        <a href="#" class="hover:text-purple-500">requests</a>
+      </nav>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto py-10 space-y-8">
+
+    <!-- Tabs -->
+    <div class="flex space-x-6 text-sm font-medium">
+      <span class="text-gray-500">Timer</span>
+      <span class="text-black">Delivered</span>
+      <span class="text-gray-500">Payment</span>
+    </div>
+
+    <!-- Job Card -->
+    <div class="bg-gray-100 border border-purple-300 rounded-2xl p-6 flex justify-between items-center">
+      
+      <!-- Left section -->
+      <div class="flex items-start space-x-4">
+        <!-- Profile image placeholder -->
+        <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+        <div>
+          <p class="font-semibold">[Client Name Placeholder]</p>
+          <p class="text-sm text-gray-700">[Job Role / Title Placeholder]</p>
+          <p class="text-sm text-gray-600 mt-1">$[Price Placeholder]</p>
+          <!-- Appeal button -->
+          <button class="mt-4 border border-black px-6 py-1.5 rounded-full text-sm hover:bg-gray-200 transition">
+            Appeal
+          </button>
+        </div>
+      </div>
+
+      <!-- Right section -->
+      <div class="flex flex-col items-center space-y-3">
+        <div class="border border-purple-300 rounded-md px-6 py-2 bg-white">
+          <p class="font-semibold">[Timer Placeholder]</p>
+        </div>
+        <p class="text-sm text-gray-500">[Deadline Placeholder]</p>
+        <!-- Done button -->
+        <button class="border border-purple-400 px-6 py-1.5 rounded-full text-sm bg-white hover:bg-purple-50 transition font-medium">
+          Done
+        </button>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <p class="text-xs text-gray-500 text-center">
+      You can only cancel 30 minutes in and you will be safe with no penalty.
+    </p>
+  </main>
+</body>
+</html>

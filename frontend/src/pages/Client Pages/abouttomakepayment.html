@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <!-- Left: Logo + Nav -->
+    <div class="flex items-center space-x-8">
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">Jobs</a>
+        <a href="#" class="text-purple-600 font-medium underline">Request</a>
+        <a href="#" class="hover:text-purple-500">Post</a>
+      </nav>
+    </div>
+    <!-- Profile -->
+    <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+  </header>
+
+  <!-- Chat Container -->
+  <main class="max-w-3xl mx-auto py-8">
+    <div class="bg-gray-100 border border-purple-300 rounded-2xl p-6 relative">
+
+      <!-- Top Right Buttons -->
+      <div class="absolute top-4 right-4 flex items-center space-x-3">
+        <!-- Cancel -->
+        <button class="w-8 h-8 rounded-full border border-red-400 flex items-center justify-center hover:bg-red-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <!-- Pay -->
+        <button class="bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-1.5 rounded-full text-sm transition">
+          Pay
+        </button>
+      </div>
+
+      <!-- Chat Messages -->
+      <div class="space-y-6 mt-12">
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Hey I am going to start the timer now. I hope you get it done by then</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">19:00 pm</p>
+          </div>
+        </div>
+
+        <!-- You -->
+        <div class="flex items-start justify-end space-x-3">
+          <div>
+            <div class="bg-purple-50 border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Great okay. Send me all the file and documents.</p>
+            </div>
+            <p class="text-xs text-gray-500 text-right mt-1">19:02 pm</p>
+          </div>
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <!-- You -->
+        <div class="flex items-start justify-end space-x-3">
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Okay sending</p>
+            </div>
+            <p class="text-xs text-gray-500 text-right mt-1">19:04 pm</p>
+          </div>
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <!-- You -->
+        <div class="flex items-start justify-end space-x-3">
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">pdf</p>
+            </div>
+            <p class="text-xs text-gray-500 text-right mt-1">19:04 pm</p>
+          </div>
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Okay start timer</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">19:25 pm</p>
+          </div>
+        </div>
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Done: Evu.com</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">12:00 am</p>
+          </div>
+        </div>
+
+        <!-- You -->
+        <div class="flex items-start justify-end space-x-3">
+          <div>
+            <div class="bg-purple-50 border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">This is good, let’s get started. When will you be done?</p>
+            </div>
+            <p class="text-xs text-gray-500 text-right mt-1">12:05 am</p>
+          </div>
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">I should be done in 2 days time.</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">12:10 am</p>
+          </div>
+        </div>
+
+        <!-- You -->
+        <div class="flex items-start justify-end space-x-3">
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Okay</p>
+            </div>
+            <p class="text-xs text-gray-500 text-right mt-1">12:12 am</p>
+          </div>
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Done</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">9:00 pm</p>
+          </div>
+        </div>
+
+        <!-- Client -->
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          <div>
+            <div class="bg-white border border-purple-300 rounded-full px-4 py-2 max-w-sm">
+              <p class="text-sm">Done: Evu.com</p>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">9:00 pm</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

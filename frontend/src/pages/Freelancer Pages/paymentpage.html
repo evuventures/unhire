@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payments</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <!-- Left: Logo + Search + Nav -->
+    <div class="flex items-center gap-8">
+      <!-- Logo -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+
+      <!-- Search -->
+      <div class="flex items-center border border-purple-300 rounded-full px-4 w-64">
+        <input type="text" placeholder="search jobs" class="flex-1 text-sm py-2 focus:outline-none"/>
+        <span class="text-gray-400">🔍</span>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">find work</a>
+        <a href="#" class="text-purple-600 font-medium underline">requests</a>
+      </nav>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-5xl mx-auto py-10 space-y-10">
+
+    <!-- Tabs -->
+    <div class="flex space-x-6 text-sm font-medium">
+      <span class="text-gray-500">Timer</span>
+      <span class="text-gray-500">Delivered</span>
+      <span class="text-black">Payment</span>
+      <span class="text-gray-500">Withdraw</span>
+      <span class="text-gray-500">History</span>
+      <span class="text-gray-500">Balance</span>
+    </div>
+
+    <!-- Payment Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Ade</p>
+          <p class="font-bold">$1500</p>
+        </div>
+        <div class="flex justify-center mt-6 gap-4">
+          <!-- Decline -->
+          <button class="w-10 h-10 rounded-full border border-purple-400 text-gray-700 inline-flex items-center justify-center hover:bg-gray-200">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 6 L18 18 M6 18 L18 6"></path>
+            </svg>
+          </button>
+          <!-- Approve -->
+          <button class="w-10 h-10 rounded-full bg-purple-400 text-white inline-flex items-center justify-center hover:bg-purple-500">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">2:04pm 9/3/2025</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Stew</p>
+          <p class="font-bold">$1500</p>
+        </div>
+        <div class="flex justify-center mt-6">
+          <!-- Pending -->
+          <button class="w-12 h-12 rounded-full bg-purple-300 text-white inline-flex items-center justify-center hover:bg-purple-400">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 10v10H3V10h4z"></path>
+              <path d="M11 21h6a3 3 0 0 0 2.94-2.39l1.1-5.5A2 2 0 0 0 19.1 11H13l.8-3.8A2.5 2.5 0 0 0 11.4 5H10v5H7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">Sunday 9/5/2025</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Faruk</p>
+          <p class="font-bold">$1300</p>
+        </div>
+        <div class="flex justify-center mt-6 gap-4">
+          <!-- Decline -->
+          <button class="w-10 h-10 rounded-full border border-purple-400 text-gray-700 inline-flex items-center justify-center hover:bg-gray-200">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 6 L18 18 M6 18 L18 6"></path>
+            </svg>
+          </button>
+          <!-- Approve -->
+          <button class="w-10 h-10 rounded-full bg-purple-400 text-white inline-flex items-center justify-center hover:bg-purple-500">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">Friday 9/4/2025</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Imama</p>
+          <p class="font-bold">$900</p>
+        </div>
+        <div class="flex justify-center mt-6">
+          <!-- Pending -->
+          <button class="w-12 h-12 rounded-full bg-purple-300 text-white inline-flex items-center justify-center hover:bg-purple-400">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 10v10H3V10h4z"></path>
+              <path d="M11 21h6a3 3 0 0 0 2.94-2.39l1.1-5.5A2 2 0 0 0 19.1 11H13l.8-3.8A2.5 2.5 0 0 0 11.4 5H10v5H7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">Thursday 9/3/2025</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Danellzy</p>
+          <p class="font-bold">$4000</p>
+        </div>
+        <div class="flex justify-center mt-6">
+          <!-- Pending -->
+          <button class="w-12 h-12 rounded-full bg-purple-300 text-white inline-flex items-center justify-center hover:bg-purple-400">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 10v10H3V10h4z"></path>
+              <path d="M11 21h6a3 3 0 0 0 2.94-2.39l1.1-5.5A2 2 0 0 0 19.1 11H13l.8-3.8A2.5 2.5 0 0 0 11.4 5H10v5H7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">Thursday 9/3/2025</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-6 flex flex-col justify-between">
+        <div class="flex justify-between">
+          <p class="font-medium">Ade</p>
+          <p class="font-bold">$300</p>
+        </div>
+        <div class="flex justify-center mt-6">
+          <!-- Pending -->
+          <button class="w-12 h-12 rounded-full bg-purple-300 text-white inline-flex items-center justify-center hover:bg-purple-400">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 10v10H3V10h4z"></path>
+              <path d="M11 21h6a3 3 0 0 0 2.94-2.39l1.1-5.5A2 2 0 0 0 19.1 11H13l.8-3.8A2.5 2.5 0 0 0 11.4 5H10v5H7"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">Tuesday 9/1/2025</p>
+      </div>
+    </div>
+
+    <!-- See More -->
+    <div class="text-center">
+      <a href="#" class="text-sm text-gray-600 hover:text-purple-600 underline">See more</a>
+    </div>
+  </main>
+</body>
+</html>

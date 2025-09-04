@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Verification</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f5f5f5] min-h-screen flex items-center justify-center">
+  <div class="bg-white p-10 rounded-2xl shadow-lg w-full max-w-md">
+    <div class="flex items-center mb-8">
+      <div class="w-10 h-10 rounded-full bg-[#c89efc] mr-2"></div>
+    </div>
+    <h2 class="text-2xl font-semibold text-center mb-6">Enter verification code</h2>
+    <div class="text-center mb-2">
+      <p class="font-semibold text-lg">OTP Verification</p>
+      <p class="text-sm text-gray-600">Enter the verification code we just sent to your email address</p>
+    </div>
+
+    <div class="flex justify-center gap-4 my-6">
+      <input maxlength="1" class="otp-input w-12 h-12 text-center rounded-md border-2 border-transparent focus:outline-none transition-colors bg-[#c89efc] text-black text-xl font-bold" type="text">
+      <input maxlength="1" class="otp-input w-12 h-12 text-center rounded-md border-2 border-transparent focus:outline-none transition-colors bg-[#c89efc] text-black text-xl font-bold" type="text">
+      <input maxlength="1" class="otp-input w-12 h-12 text-center rounded-md border-2 border-transparent focus:outline-none transition-colors bg-[#c89efc] text-black text-xl font-bold" type="text">
+      <input maxlength="1" class="otp-input w-12 h-12 text-center rounded-md border-2 border-transparent focus:outline-none transition-colors bg-[#c89efc] text-black text-xl font-bold" type="text">
+      <input maxlength="1" class="otp-input w-12 h-12 text-center rounded-md border-2 border-transparent focus:outline-none transition-colors bg-[#c89efc] text-black text-xl font-bold" type="text">
+    </div>
+
+    <div class="flex flex-col items-center">
+      <button class="bg-[#c89efc] hover:bg-purple-500 text-white px-6 py-2 rounded-full font-semibold transition-all">Verify</button>
+      <p class="mt-4 text-sm text-gray-600">Didn't receive a code? <a href="#" class="text-[#c89efc] font-medium">Resend</a></p>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll('.otp-input');
+
+    inputs.forEach(input => {
+      input.addEventListener('input', (e) => {
+        if (e.target.value.trim() !== '') {
+          e.target.classList.remove('bg-[#c89efc]');
+          e.target.classList.add('bg-white');
+        } else {
+          e.target.classList.remove('bg-white');
+          e.target.classList.add('bg-[#c89efc]');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

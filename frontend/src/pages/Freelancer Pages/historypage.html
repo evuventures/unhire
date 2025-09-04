@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <!-- Left: Logo + Search + Nav -->
+    <div class="flex items-center gap-8">
+      <!-- Logo -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+
+      <!-- Search -->
+      <div class="flex items-center border border-purple-300 rounded-full px-4 w-64">
+        <input type="text" placeholder="search jobs" class="flex-1 text-sm py-2 focus:outline-none"/>
+        <span class="text-gray-400">🔍</span>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">find work</a>
+        <a href="#" class="text-purple-600 font-medium underline">requests</a>
+      </nav>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto py-12 space-y-10">
+
+    <!-- Tabs -->
+    <div class="flex space-x-6 text-sm font-medium justify-center">
+      <span class="text-gray-500">Timer</span>
+      <span class="text-gray-500">Delivered</span>
+      <span class="text-gray-500">Payment</span>
+      <span class="text-gray-500">Withdraw</span>
+      <span class="text-black">History</span>
+      <span class="text-gray-500">Balance</span>
+    </div>
+
+    <!-- History Container -->
+    <div class="bg-gray-50 border border-purple-300 rounded-2xl p-8 space-y-6">
+
+      <!-- Record 1 -->
+      <div class="flex items-center justify-between bg-white border border-purple-200 rounded-xl p-4 shadow-sm">
+        <div>
+          <p class="text-sm text-gray-600">Amount</p>
+          <p class="font-bold text-lg">$1500</p>
+        </div>
+        <div class="flex-1 mx-6">
+          <p class="text-sm text-gray-600">Project</p>
+          <p class="font-medium">UI/UX design for Fintech app</p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-gray-600">Date</p>
+          <p class="text-sm">Thursday 30/07/2025</p>
+        </div>
+      </div>
+
+      <!-- Record 2 -->
+      <div class="flex items-center justify-between bg-white border border-purple-200 rounded-xl p-4 shadow-sm">
+        <div>
+          <p class="text-sm text-gray-600">Amount</p>
+          <p class="font-bold text-lg">$200</p>
+        </div>
+        <div class="flex-1 mx-6">
+          <p class="text-sm text-gray-600">Project</p>
+          <p class="font-medium truncate">Landing page Web design...</p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-gray-600">Date</p>
+          <p class="text-sm">Tuesday 29/07/2025</p>
+        </div>
+      </div>
+
+      <!-- Record 3 -->
+      <div class="flex items-center justify-between bg-white border border-purple-200 rounded-xl p-4 shadow-sm">
+        <div>
+          <p class="text-sm text-gray-600">Amount</p>
+          <p class="font-bold text-lg">$50</p>
+        </div>
+        <div class="flex-1 mx-6">
+          <p class="text-sm text-gray-600">Project</p>
+          <p class="font-medium">Python assignment</p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-gray-600">Date</p>
+          <p class="text-sm">Monday 29/07/2025</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

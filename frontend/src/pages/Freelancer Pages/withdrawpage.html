@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Withdraw</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <!-- Left: Logo + Search (top-left) + Nav -->
+    <div class="flex items-center gap-8">
+      <!-- Logo placeholder -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+
+      <!-- Search BAR (TOP-LEFT) -->
+      <div class="flex items-center border border-purple-300 rounded-full px-4 w-64">
+        <input type="text" placeholder="search jobs" class="flex-1 text-sm py-2 focus:outline-none"/>
+        <span class="text-gray-400">🔍</span>
+      </div>
+
+      <!-- Nav links (unchanged) -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">find work</a>
+        <a href="#" class="text-purple-600 font-medium underline">requests</a>
+      </nav>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-3xl mx-auto py-10 space-y-10">
+
+    <!-- Tabs -->
+    <div class="flex space-x-6 text-sm font-medium">
+      <span class="text-gray-500">Timer</span>
+      <span class="text-gray-500">Delivered</span>
+      <span class="text-gray-500">Payment</span>
+      <span class="text-black">Withdraw</span>
+      <span class="text-gray-500">History</span>
+      <span class="text-gray-500">Balance</span>
+    </div>
+
+    <!-- Balance + Inputs -->
+    <div class="flex items-center justify-center space-x-6">
+      <div class="bg-gray-100 border border-purple-300 rounded-lg px-8 py-4 text-center">
+        <p class="text-xs text-gray-500 mb-1">balance</p>
+        <p class="text-xl font-bold">$7000</p>
+      </div>
+      <input type="text" placeholder="$ Enter amount" class="flex-1 border border-purple-300 rounded-full px-6 py-3 text-sm text-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <input type="text" placeholder="$ Enter account number" class="flex-1 border border-purple-300 rounded-full px-6 py-3 text-sm text-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+    </div>
+
+    <!-- Payment Methods Table -->
+    <div class="border border-purple-300 rounded-xl overflow-hidden">
+      <table class="w-full text-sm border-collapse">
+        <thead class="bg-purple-100">
+          <tr>
+            <th class="text-left px-6 py-3 font-semibold text-purple-600">Payment</th>
+            <th class="text-left px-6 py-3 font-semibold text-purple-600">methods</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-purple-200">
+            <td class="px-6 py-4 font-bold text-blue-600">Stripe</td>
+            <td class="px-6 py-4 text-gray-600">Stripe</td>
+          </tr>
+          <tr class="border-t border-purple-200">
+            <td class="px-6 py-4 font-bold text-black">Cashapp</td>
+            <td class="px-6 py-4 text-gray-600">Cashapp</td>
+          </tr>
+          <tr class="border-t border-purple-200">
+            <td class="px-6 py-4 font-bold text-blue-600">Paypal</td>
+            <td class="px-6 py-4 text-gray-600">Paypal</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Withdraw Button -->
+    <div class="text-center">
+      <button class="px-8 py-2 border border-purple-400 rounded-full hover:bg-purple-50 transition font-medium">
+        Withdraw
+      </button>
+    </div>
+  </main>
+</body>
+</html>

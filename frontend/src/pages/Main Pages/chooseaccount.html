@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose an Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f4f5fa] font-sans text-gray-800">
+
+    <div class="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+      <!-- Title -->
+      <h1 class="text-4xl font-bold mb-14 text-center">Choose an Account</h1>
+
+      <!-- Account Options -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
+
+        <!-- Recruiter (new image) -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 transition hover:shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1400&q=80"
+            alt="Recruiter"
+            class="w-full h-[400px] object-cover"
+          />
+          <div class="p-6 text-center">
+            <button class="bg-blue-500 text-white text-xl px-8 py-3 rounded-full hover:bg-blue-600 transition">
+              Recruiter
+            </button>
+          </div>
+        </div>
+
+        <!-- Freelancer -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 transition hover:shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80"
+            alt="Freelancer"
+            class="w-full h-[400px] object-cover"
+          />
+          <div class="p-6 text-center">
+            <button class="bg-purple-500 text-white text-xl px-8 py-3 rounded-full hover:bg-purple-600 transition">
+              Freelancer
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
+

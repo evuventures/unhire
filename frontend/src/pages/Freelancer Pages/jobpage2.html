@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b bg-white">
+    <div class="flex items-center space-x-10">
+      <!-- Logo Placeholder -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <!-- Nav Links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">Find work</a>
+        <a href="#" class="hover:text-purple-500">Delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">Requests</a>
+      </nav>
+    </div>
+    <!-- Search -->
+    <div class="relative">
+      <input type="text" placeholder="search jobs" 
+        class="px-4 py-2 rounded-full border border-gray-300 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <span class="absolute right-3 top-2.5 text-gray-400">🔍</span>
+    </div>
+  </header>
+
+  <!-- Job Details Card -->
+  <main class="max-w-4xl mx-auto py-10">
+    <div class="bg-white shadow-sm rounded-2xl p-8 relative">
+
+      <!-- Header Section -->
+      <div class="flex items-start justify-between">
+        <div>
+          <h1 class="text-xl font-semibold">Python developer looking to automate task</h1>
+          <p class="text-xs text-gray-400 mt-1">posted 5mins ago</p>
+          <div class="flex items-center space-x-2 text-gray-600 mt-2 text-sm">
+            <span>📍</span><span>usa</span>
+          </div>
+        </div>
+        <button class="bg-purple-500 hover:bg-purple-600 text-white px-5 py-2 rounded-full text-sm">
+          Apply now
+        </button>
+      </div>
+
+      <!-- Summary -->
+      <section class="mt-8">
+        <h2 class="font-medium mb-2">Summary</h2>
+        <p class="text-sm leading-relaxed text-gray-700">
+          Seeking an experienced Python developer to design, build, and maintain automation solutions that
+          streamline workflows, reduce manual effort, and improve operational efficiency. Responsibilities include
+          API integrations, data processing, task scheduling, and delivering scalable, well-documented code that
+          enhances productivity while ensuring reliability, security, and adaptability to evolving business needs.
+        </p>
+      </section>
+
+      <!-- Overview -->
+      <section class="mt-8">
+        <h2 class="font-medium mb-2">Overview</h2>
+        <p class="text-sm leading-relaxed text-gray-700">
+          This project aims to develop robust Python-based automation solutions to optimize business workflows
+          and eliminate repetitive manual tasks. It will involve creating scalable scripts, integrating APIs, processing
+          data, and scheduling tasks. The goal is to enhance productivity, ensure operational accuracy, and provide
+          adaptable, well-documented systems that can evolve with changing business requirements and growth
+          demands.
+        </p>
+      </section>
+
+      <!-- Info Boxes -->
+      <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="border border-purple-300 rounded-md p-4 text-center text-sm">
+          <p class="font-medium">$3000</p>
+          <p class="text-gray-500 text-xs mt-1">one time payment</p>
+        </div>
+        <div class="border border-purple-300 rounded-md p-4 text-center text-sm">
+          <p class="font-medium">3 hours</p>
+          <p class="text-gray-500 text-xs mt-1">estimated time</p>
+        </div>
+        <div class="border border-purple-300 rounded-md p-4 text-center text-sm">
+          <p class="font-medium">Intermediate</p>
+          <p class="text-gray-500 text-xs mt-1">4 years experience</p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <section class="mt-10 border border-gray-300 rounded-md p-6">
+        <h2 class="font-medium mb-3">Skills and Expertise</h2>
+        <p class="text-sm mb-4">Required</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">python</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">python</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">pandas</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">MySQL</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">API</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">AI</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">backend</span>
+          <span class="px-4 py-1 border border-purple-300 rounded-full text-sm">deployment</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>

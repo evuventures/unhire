@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Requests</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b">
+    <div class="flex items-center space-x-10">
+      <!-- Logo -->
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <!-- Nav links -->
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">delivered jobs</a>
+        <a href="#" class="hover:text-purple-500">find work</a>
+        <a href="#" class="text-purple-600 font-medium underline">requests</a>
+      </nav>
+    </div>
+    <!-- Search -->
+    <div class="relative flex items-center">
+      <input type="text" placeholder="search jobs" 
+        class="px-4 py-2 rounded-full border border-purple-300 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <span class="absolute right-3 top-2.5 text-gray-400">🔍</span>
+    </div>
+    <!-- Profile -->
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-3xl mx-auto py-10 space-y-8">
+
+    <!-- Tabs -->
+    <div class="flex space-x-6 text-sm font-medium">
+      <span class="text-gray-500">Chat</span>
+      <span class="text-black">Requests</span>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="bg-gray-50 border border-purple-300 rounded-2xl p-6 space-y-6 relative">
+
+      <!-- Timer -->
+      <div class="absolute top-6 right-6 border border-purple-300 rounded-md px-4 py-2 bg-white font-medium">
+        00:00
+      </div>
+
+      <!-- Message bubbles -->
+      <div class="flex items-start space-x-3">
+        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        <div>
+          <div class="px-4 py-2 rounded-full border border-purple-300 bg-white text-sm">
+            [Message placeholder from other user]
+          </div>
+          <p class="text-xs text-gray-500 mt-1">[19:00pm]</p>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-end space-x-3">
+        <div>
+          <div class="px-4 py-2 rounded-full border border-purple-300 bg-white text-sm">
+            [Message placeholder from you]
+          </div>
+          <p class="text-xs text-gray-500 mt-1 text-right">[19:02pm]</p>
+        </div>
+        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        <div>
+          <div class="px-4 py-2 rounded-full border border-purple-300 bg-white text-sm">
+            [File placeholder: pdf/doc/etc.]
+          </div>
+          <p class="text-xs text-gray-500 mt-1">[19:04pm]</p>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-end space-x-3">
+        <div>
+          <div class="px-4 py-2 rounded-full border border-purple-300 bg-white text-sm">
+            [Message placeholder from you]
+          </div>
+          <p class="text-xs text-gray-500 mt-1 text-right">[19:25pm]</p>
+        </div>
+        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+      </div>
+
+      <!-- Final rating / feedback -->
+      <div class="bg-gray-100 border border-purple-300 rounded-xl p-4">
+        <div class="flex items-center text-purple-500 mb-2">★★★★☆</div>
+        <p class="text-sm text-gray-700">
+          [Final feedback placeholder: client’s closing comment and recommendation.]
+        </p>
+        <div class="text-center mt-4">
+          <button class="border border-purple-400 px-8 py-1.5 rounded-full bg-white hover:bg-purple-50 text-sm">
+            Display
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

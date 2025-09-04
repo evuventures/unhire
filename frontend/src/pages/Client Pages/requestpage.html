@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Requests</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-12 py-6 border-b">
+    <div class="flex items-center gap-12">
+      <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center text-white text-sm">Logo</div>
+      <nav class="flex space-x-12 text-lg font-medium">
+        <a href="#" class="hover:text-purple-500">Jobs</a>
+        <a href="#" class="text-purple-600 underline">Request</a>
+        <a href="#" class="hover:text-purple-500">Post</a>
+      </nav>
+    </div>
+    <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto py-12 space-y-12">
+
+    <!-- Tabs -->
+    <div class="flex space-x-12 text-lg font-semibold border-b pb-3">
+      <a href="#" class="text-gray-500 hover:text-purple-600">Chat</a>
+      <a href="#" class="text-black border-b-2 border-purple-400">Account</a>
+      <a href="#" class="text-gray-500 hover:text-purple-600">Delivered</a>
+    </div>
+
+    <!-- Requests List -->
+    <div class="space-y-8">
+      <!-- Request 1 -->
+      <div class="flex items-center gap-5 bg-gray-100 border border-purple-200 px-6 py-5 rounded-2xl shadow-sm">
+        <div class="w-14 h-14 bg-gray-300 rounded-full overflow-hidden">
+          <img src="#" alt="Danellzy" class="w-full h-full object-cover"/>
+        </div>
+        <div>
+          <p class="font-semibold text-lg">Danellzy</p>
+          <p class="text-base text-gray-700">Dane: Rating you now. Thank you very much</p>
+        </div>
+      </div>
+
+      <!-- Request 2 -->
+      <div class="flex items-center gap-5 bg-gray-100 border border-purple-200 px-6 py-5 rounded-2xl shadow-sm">
+        <div class="w-14 h-14 bg-gray-300 rounded-full overflow-hidden">
+          <img src="#" alt="Queen" class="w-full h-full object-cover"/>
+        </div>
+        <div>
+          <p class="font-semibold text-lg">Queen</p>
+          <p class="text-base text-gray-700">You: Hey I am going to start the timer now. I hope you get it done by then</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- See More -->
+    <div class="text-center">
+      <a href="#" class="text-base text-gray-600 hover:text-purple-600 underline">See more</a>
+    </div>
+  </main>
+</body>
+</html>

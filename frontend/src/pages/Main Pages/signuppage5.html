@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up to Unhire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f9f9f9] min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md bg-[#f0efef] p-10 rounded-2xl shadow-lg">
+      <!-- Top logo placeholder -->
+      <div class="flex justify-start mb-6">
+        <div class="w-10 h-10 bg-[#C49AF2] rounded-full"></div>
+      </div>
+
+      <!-- Branded logo placeholder -->
+      <h1 class="text-center text-xl font-semibold mb-6">
+        <img
+          src="your-logo-placeholder.png"
+          alt="Unhire logo placeholder"
+          class="mx-auto w-28 h-auto"
+        />
+        <span class="sr-only">Sign up to Unhire</span>
+      </h1>
+
+      <!-- Form -->
+      <form class="flex flex-col gap-4">
+        <input
+          type="email"
+          placeholder="Enter email"
+          class="px-4 py-3 border border-[#C49AF2] rounded-full bg-white placeholder:text-[#d3c6e2] focus:outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Enter full name"
+          class="px-4 py-3 border border-[#C49AF2] rounded-full bg-white placeholder:text-[#d3c6e2] focus:outline-none"
+        />
+        <div class="relative">
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full px-4 py-3 border border-[#C49AF2] rounded-full bg-white placeholder:text-[#d3c6e2] focus:outline-none"
+          />
+          <span class="absolute right-4 top-3.5">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
+              alt="Show password"
+              class="w-5 h-5 opacity-70"
+            />
+          </span>
+        </div>
+        <div class="relative">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            class="w-full px-4 py-3 border border-[#C49AF2] rounded-full bg-white placeholder:text-[#d3c6e2] focus:outline-none"
+          />
+          <span class="absolute right-4 top-3.5">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
+              alt="Show password"
+              class="w-5 h-5 opacity-70"
+            />
+          </span>
+        </div>
+        <button
+          type="submit"
+          class="bg-[#C49AF2] text-white font-semibold py-3 rounded-full mt-2"
+        >
+          Sign up
+        </button>
+        <div class="flex justify-center gap-2 mt-3 text-sm">
+          <p>Already have an account?</p>
+          <a href="#" class="underline font-medium">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

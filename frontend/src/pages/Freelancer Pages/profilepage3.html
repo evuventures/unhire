@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Public View</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 border-b bg-white">
+    <div class="flex items-center space-x-10">
+      <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white text-xs">
+        Logo
+      </div>
+      <nav class="flex space-x-8 text-sm">
+        <a href="#" class="hover:text-purple-500">Find Work</a>
+        <a href="#" class="hover:text-purple-500">Delivered Jobs</a>
+        <a href="#" class="hover:text-purple-500">Requests</a>
+      </nav>
+    </div>
+    <div class="relative">
+      <input type="text" placeholder="Search Jobs" 
+        class="px-4 py-2 rounded-full border border-gray-300 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+      <span class="absolute right-3 top-2.5 text-gray-400">🔍</span>
+    </div>
+  </header>
+
+  <!-- Public Profile -->
+  <main class="max-w-4xl mx-auto py-10 space-y-12">
+
+    <!-- Title -->
+    <h1 class="text-center font-semibold text-lg">Public View</h1>
+
+    <!-- Profile Info -->
+    <div class="flex items-center justify-between p-6 bg-white shadow-sm rounded-xl">
+      <div class="flex items-center space-x-4">
+        <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+        <div>
+          <p class="font-semibold">[Full Name Placeholder]</p>
+          <p class="text-sm text-gray-500">[Role / Specialization Placeholder]</p>
+        </div>
+      </div>
+      <div class="text-right text-sm text-gray-500">
+        <p>[Location Placeholder]</p>
+        <p>[Gender Placeholder]</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="flex flex-wrap gap-3">
+      <span class="px-4 py-1 border border-purple-300 rounded-full text-sm bg-white shadow-sm">[Skill 1]</span>
+      <span class="px-4 py-1 border border-purple-300 rounded-full text-sm bg-white shadow-sm">[Skill 2]</span>
+      <span class="px-4 py-1 border border-purple-300 rounded-full text-sm bg-white shadow-sm">[Skill 3]</span>
+      <span class="px-4 py-1 border border-purple-300 rounded-full text-sm bg-white shadow-sm">[Skill 4]</span>
+    </div>
+
+    <!-- Summary -->
+    <section class="bg-white shadow-sm rounded-xl p-6">
+      <h2 class="font-semibold mb-3">Summary</h2>
+      <p class="text-sm leading-relaxed text-gray-700">
+        [Summary text placeholder: a short description about the person’s background, expertise, and work focus.]
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-white shadow-sm rounded-xl p-6">
+      <h2 class="font-semibold mb-4">Projects</h2>
+      <div class="space-y-8">
+        <div class="flex items-start space-x-4">
+          <div class="w-28 h-36 bg-gray-200 rounded-md flex-shrink-0"></div>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-700">[Project description placeholder]</p>
+            <a href="#" class="text-purple-600 underline text-sm">[Project link placeholder]</a>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-28 h-36 bg-gray-200 rounded-md flex-shrink-0"></div>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-700">[Project description placeholder]</p>
+            <a href="#" class="text-purple-600 underline text-sm">[Project link placeholder]</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ratings -->
+    <section class="bg-white shadow-sm rounded-xl p-6">
+      <h2 class="font-semibold mb-4">Rating and Deadlines</h2>
+      <div class="flex justify-around gap-6 flex-wrap">
+        <!-- Deadlines -->
+        <div class="flex items-center border border-purple-300 rounded-full px-6 py-2 bg-gray-50"
+             data-role="rating" data-name="Deadlines" data-value="0">
+          <span class="text-sm font-medium underline mr-4">Deadlines</span>
+          <div class="flex gap-2 stars">
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+          </div>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center border border-purple-300 rounded-full px-6 py-2 bg-gray-50"
+             data-role="rating" data-name="Rating" data-value="0">
+          <span class="text-sm font-medium underline mr-4">Rating</span>
+          <div class="flex gap-2 stars">
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+            <span class="star text-gray-300 text-xl cursor-pointer">★</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Method -->
+    <section class="bg-white shadow-sm rounded-xl p-6 text-center">
+      <h2 class="font-semibold mb-4">Payment Method</h2>
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">💰</div>
+        <p class="text-purple-600 underline text-sm">[Payment method placeholder]</p>
+      </div>
+    </section>
+
+    <!-- Comments -->
+    <section class="bg-white shadow-sm rounded-xl p-6">
+      <h2 class="font-semibold mb-4">Comments</h2>
+      <div class="space-y-6">
+        <div class="border border-purple-200 rounded-xl p-4 bg-gray-50">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+              <div>
+                <p class="font-medium text-sm">[Reviewer Name Placeholder]</p>
+                <p class="text-xs text-gray-500">[Reviewer Role / Project Placeholder]</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="text-purple-500">★★★☆☆</div>
+              <p class="text-xs text-gray-500">[Time placeholder]</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700">
+            [Reviewer comment placeholder: feedback about the user’s performance on the project.]
+          </p>
+        </div>
+        <div class="border border-purple-200 rounded-xl p-4 bg-gray-50">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+              <div>
+                <p class="font-medium text-sm">[Reviewer Name Placeholder]</p>
+                <p class="text-xs text-gray-500">[Reviewer Role / Project Placeholder]</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="text-purple-500">★★★★☆</div>
+              <p class="text-xs text-gray-500">[Time placeholder]</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700">
+            [Reviewer comment placeholder: feedback about the user’s performance on the project.]
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Interactive star ratings
+    document.querySelectorAll('[data-role="rating"]').forEach((container) => {
+      const stars = container.querySelectorAll('.star');
+      let value = 0;
+
+      const update = (n) => {
+        stars.forEach((star, i) => {
+          star.classList.toggle('text-purple-500', i < n);
+          star.classList.toggle('text-gray-300', i >= n);
+        });
+      };
+
+      stars.forEach((star, i) => {
+        star.addEventListener('click', () => {
+          value = i + 1;
+          update(value);
+        });
+        star.addEventListener('mouseenter', () => update(i + 1));
+        star.addEventListener('mouseleave', () => update(value));
+      });
+
+      update(value);
+    });
+  </script>
+
+</body>
+</html>

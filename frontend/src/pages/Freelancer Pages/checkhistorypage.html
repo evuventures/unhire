@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Details Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen">
+
+  <!-- Background (just to show the dim overlay) -->
+  <header class="flex items-center justify-between px-8 py-5 border-b">
+    <div class="flex items-center gap-8">
+      <div class="w-10 h-10 rounded-full bg-purple-400 text-white text-xs flex items-center justify-center">Logo</div>
+      <div class="flex items-center border border-purple-300 rounded-full px-4 w-72">
+        <input class="flex-1 py-2 text-sm focus:outline-none" placeholder="search jobs"/>
+        <span class="text-gray-400">🔍</span>
+      </div>
+      <nav class="flex gap-8 text-lg">
+        <a class="hover:text-purple-500">delivered jobs</a>
+        <a class="hover:text-purple-500">find work</a>
+        <a class="text-black">requests</a>
+      </nav>
+    </div>
+    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-8">
+    <div class="h-96 border border-purple-300 rounded-2xl"></div>
+  </main>
+
+  <!-- ===== Modal Overlay + Card ===== -->
+  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+    <div class="w-full max-w-3xl bg-gray-100 rounded-3xl border border-purple-300 shadow-2xl">
+      <div class="p-8 md:p-10">
+        <!-- Content grid -->
+        <div class="space-y-6">
+          <!-- Row -->
+          <div class="flex items-start gap-8">
+            <div class="w-40 shrink-0 text-gray-600">Job:</div>
+            <div class="flex-1 font-semibold text-gray-900">
+              UI/UX Design for a Fintech App
+            </div>
+          </div>
+
+          <div class="flex items-start gap-8">
+            <div class="w-40 shrink-0 text-gray-600">Client name:</div>
+            <div class="flex-1 font-medium text-gray-900">
+              Ade Johnson
+            </div>
+          </div>
+
+          <div class="flex items-start gap-8">
+            <div class="w-40 shrink-0 text-gray-600">Price:</div>
+            <div class="flex-1 font-semibold text-gray-900">
+              $ 1500
+            </div>
+          </div>
+
+          <div class="flex items-center gap-8">
+            <div class="w-40 shrink-0 text-gray-600">rating:</div>
+            <div class="flex items-center gap-2">
+              <!-- 4 filled (purple), 1 empty (gray) -->
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-purple-500"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-purple-500"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-purple-500"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-purple-500"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-gray-300"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-8">
+            <div class="w-40 shrink-0 text-gray-600">Timer :</div>
+            <div class="flex-1 font-medium text-gray-900">
+              9:00:00
+            </div>
+          </div>
+        </div>
+
+        <!-- Action -->
+        <div class="mt-10 flex justify-center">
+          <button class="px-8 py-2 rounded-full border border-purple-300 bg-white hover:bg-purple-50 transition font-medium">
+            Chat
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===== /Modal ===== -->
+</body>
+</html>
