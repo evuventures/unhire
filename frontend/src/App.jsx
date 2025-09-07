@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage';
 import Services from './pages/Services';
 import JoinNow from './pages/JoinNow';
 import './App.css';
+import SignupPage from "./pages/SignupPage";
 import Card from './pages/Card';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/join-now" element={<JoinNow />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </Router>
   );

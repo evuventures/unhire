@@ -29,7 +29,9 @@ const LandingPage = () => {
                         A freelance platform that guarantees on-time delivery, every time. No missed deadlines, no excuses just reliable talent committed to your success
                     </p>
                     <div className="hero-buttons">
-                        <button className="signup">Sign up</button>
+                         <button className="signup" onClick={() => navigate('/signup')}>
+                            Sign up
+                        </button>
                         <button className="login">login</button>
                     </div>
                 </div>
